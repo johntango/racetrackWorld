@@ -11,7 +11,9 @@
         },
         "vscode": {
             "extensions": [
-                "GitHub.copilot"
+                "GitHub.copilot",
+                "ms-tools-ai.jupyter",
+                "ms-python-python"
             ]
         }
     }
