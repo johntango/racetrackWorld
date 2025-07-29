@@ -1,21 +1,18 @@
 {
-    "name": "Notebook project",
+    "name": "NeuralNets",
     "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
     "customizations": {
         "codespaces": {
             "openFiles": []
         },
         "vscode": {
-            "settings": {
-                "python.defaultInterpreterPath": "/usr/local/bin/python"
-            },
             "extensions": [
-                "ms-python.python",
-                "ms-toolsai.jupyter",
-                "MS-vsliveshare.vsliveshare"
+                "GitHub.copilot"
             ]
         }
-    },
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
-    "postAttachCommand": "code /workspaces/materials-fa22/materials/fa22/hw/hw01/hw01.ipynb"
+    }
 }
